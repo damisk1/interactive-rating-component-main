@@ -1,0 +1,124 @@
+.card {
+    display: flex;
+    justify-content: center;
+}
+.card-1 {
+    background: radial-gradient(50% 50% at top,var(--dark-blue),hsla(213, 20%, 18%, 0.5));
+    background-repeat:no-repeat;
+    width: 395px;
+    border-radius: 20px;
+    padding: 2rem;
+}
+.icon-star {margin-bottom: 1.5rem;}
+.icon-star + div {margin-bottom: 1.5rem;}
+.icon-star, .rating-button {
+    background-color: var(--medium-grey);
+    height: 3.5rem;
+    width: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--light-grey);
+    transition: all .2s ease;
+    font-weight: 700;
+}
+.selected {
+    background-color: var(--light-grey);
+    color: var(--white);
+}
+.card-1 h1 {
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+.card-1 p {
+    color: var(--light-grey);
+    line-height: 1.5;
+}
+.rating {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+.rating-button:hover {
+    background-color: var(--orange);
+    cursor: pointer;
+    color: var(--white);
+}
+.submit-button {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    color: var(--white);
+    width: 100%;
+    background-color: var(--orange);
+    padding: .8rem 0;
+    border-radius: 2rem;
+}
+.submit-button:hover {
+    transition: all 0.2s ease;
+    background-color: var(--white);
+    color: var(--orange);
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    .card-1 {width: 90%;}
+    .rating-button {
+        height: 3rem;
+        width: 3rem;
+    }
+}
+@media (max-width: 375px) {
+    .rating-button {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+}
+/* --- card - 2 ---*/
+.card-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: radial-gradient(50% 50% at top,var(--dark-blue),hsla(213, 20%, 18%, 0.5));
+    background-repeat:no-repeat;
+    width: 395px;
+    border-radius: 20px;
+    padding: 3rem 2rem;
+}
+.result {
+    background-color: var(--medium-grey);
+    padding: .6rem 1rem;
+    border-radius: 2rem;
+}
+.result p {
+    height: 1rem;
+    color: var(--orange);
+}
+.card-2-img {margin-bottom: 1.5rem;}
+.result {margin-bottom: 2rem;}
+.card-2 h2{
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+.card-2 h2 + p{
+    color: var(--light-grey);
+    text-align: center;
+    line-height: 1.5;
+}
+
+@media (max-width: 480px) {
+    .card-2 {width: 90%;}
+}
+@media (max-width: 375px) {
+    .card-2 {padding: 3rem 1rem;}
+}
+
+.attribution {
+    font-size: 0.7rem;
+    text-align: center;
+    color: var(--light-grey);
+  }
+
+  .attribution a {color: hsl(228, 45%, 44%);}
